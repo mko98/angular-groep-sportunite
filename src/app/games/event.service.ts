@@ -157,7 +157,7 @@ export class EventService {
     //   "Availability": event.availability
     // };
     console.log(event);
-    return this.http.post(this.eventsUrl, event, {headers: this.headers})
+    return this.http.post(this.eventServerUrl, event, {headers: this.headers})
       .toPromise()
       .then(response => {
         this.eventChanged.next(this.events);
