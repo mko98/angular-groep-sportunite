@@ -3,12 +3,13 @@ import {Subject} from 'rxjs/Subject';
 import {environment} from '../../environments/environment';
 import {Http, Headers} from '@angular/http';
 import {Userloginregister} from "./userloginregister.model";
+import {SessionStorageService} from '../shared/sessionStorage.service';
 
 @Injectable()
 export class UserLoginRegisterService {
   eventChanged = new Subject<Event[]>();
 
-  private headers = new Headers({'Content-Type': 'application/json'});
+  private headers = this.sessionStorageService.getheaders();
   private serverUrl = environment.nodeServerUrl + '/events/';
   private serverUserUrl = environment.nodeServerUrl + '/users/';
 
@@ -16,7 +17,7 @@ export class UserLoginRegisterService {
   private users: Userloginregister[];
   private user: Userloginregister;
 
-  constructor(private http: Http) {
+  constructor(private http: Http, private sessionStorageService: SessionStorageService) {
 
   }
 
