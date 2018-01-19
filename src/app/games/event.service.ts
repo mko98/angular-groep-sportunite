@@ -16,7 +16,7 @@ export class EventService {
   private token = localStorage.getItem('token');
   private headers = new Headers({'Access-Control-Allow-Origin': '*',
     'token': this.token});  // private options = new RequestOptions({headers: this.headers})
-  private eventServerUrl = 'https://nodejs-groep-sportunite.herokuapp.com/api/v1/events/';
+  private eventServerUrl = 'https://nodejs-groep-sportunite.herokuapp.com/api/v1/events';
   private userListUrl = 'https://nodejs-groep-sportunite.herokuapp.com/api/v1/tests';
   private userServerUrl = 'https://nodejs-groep-sportunite.herokuapp.com//api/v1/users';
   private events: Event[];
