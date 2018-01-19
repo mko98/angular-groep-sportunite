@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  nodeServerUrl: 'http://localhost:3000/api/v1',
-  nodeServerUrlChar: 'http://localhost:3000/api/v1/users/',
+  nodeServerUrl: 'https://nodejs-groep-sportunite.herokuapp.com/api/v1/',
+  nodeServerUrlChar: 'https://nodejs-groep-sportunite.herokuapp.com/api/v1/users/',
   webApiServerUrlRel: 'http://sportuniteapiavans.azurewebsites.net/api'
 };
