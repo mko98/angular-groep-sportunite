@@ -1,0 +1,38 @@
+.itemStyle {
+  -webkit-box-shadow: 2px 5px 15px 1px #808080;
+  box-shadow: 2px 5px 15px 1px #808080;
+  -webkit-border-radius: 15px 15px;
+  border-radius: 15px 15px;
+}
+
+.rowspacing{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.imageSpacing{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.itemSpacing{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bottomSpacing{
+  margin-bottom: 20px;
+}
+
+.buttonStyle {
+  -webkit-box-shadow: 2px 2px 2px 1px #808080;
+  box-shadow: 2px 2px 2px 1px #808080;
+  -webkit-border-radius: 5px 5px;
+  border-radius: 5px 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+div{
+  font-family: Verdana;
+}

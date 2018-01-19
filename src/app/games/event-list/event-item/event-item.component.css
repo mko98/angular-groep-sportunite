@@ -1,0 +1,16 @@
+.itemSpacing{
+  margin: 10px;
+}
+.itemStyle {
+  -webkit-box-shadow: 2px 5px 15px 1px #808080;
+  box-shadow: 2px 5px 15px 1px #808080;
+}
+
+div{
+  font-family: Verdana;
+}
+
+img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

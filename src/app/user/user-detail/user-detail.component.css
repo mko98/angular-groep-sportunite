@@ -1,0 +1,8 @@
+.borderex {
+  border: black medium solid;
+}
+
+.down{
+  top: 10px;
+  margin-bottom: 20px;
+}

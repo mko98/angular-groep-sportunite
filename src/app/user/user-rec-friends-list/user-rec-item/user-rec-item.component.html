@@ -1,0 +1,16 @@
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  (click)="onSelected()"
+  class="list-group-item clearfix">
+
+  <div>
+    <h4 class="list-group-item-heading">{{ user.name }}</h4>
+  </div>
+
+  <div>
+    <button class="btn btn-success" (click)="onFriendAdded()"><a>Add friend</a></button>
+  </div>
+
+</a>

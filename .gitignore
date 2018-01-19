@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/SportsUniteB1_2.2_FE/v15
+/package-lock.json
+
+# Ignore node_modules
+node_modules/
+/.vs/SportUniteFE/v15

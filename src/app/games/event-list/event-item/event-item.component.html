@@ -1,0 +1,18 @@
+<a
+  style="cursor: pointer;"
+  [routerLink]="[sportEventId]"
+  routerLinkActive="active"
+  class="list-group-item clearfix itemSpacing itemStyle">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ event.name }}</h4>
+    <p class="list-group-item-text">€{{ event.price }}</p>
+    <p class="list-group-item-text">{{ event.sportHall }}</p>
+    <p class="list-group-item-text">{{ event.sport }}</p>
+    <p class="list-group-item-text">{{ event.availability ? "Beschikbaar" : "Onbeschikbaar" }}</p>
+  </div>
+  <div>
+
+  </div>
+  <span class="pull-right">
+      </span>
+</a>

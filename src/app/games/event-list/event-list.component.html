@@ -1,0 +1,21 @@
+<script src="event-list.component.ts"></script>
+<div class="row" style="margin-top: 30px;">
+  <div class="col-md-12">
+    <h1>Event List</h1>
+  </div>
+  <div class="col-xs-8">
+    <h5>Event not found? Add the event!</h5>
+  </div>
+  <div class="col-xs-3">
+    <button class="btn btn-success itemStyle" (click)="onNewEvent()"><span class="glyphicon glyphicon-plus iconButton"></span>New Event</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-game-item
+      *ngFor="let eventEL of events; let i = index"
+      [event]="eventEL"
+      [sportEventId]="eventEL.sportEventId"></app-game-item>
+  </div>
+</div>

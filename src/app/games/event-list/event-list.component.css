@@ -1,0 +1,23 @@
+.filterSpacing{
+  margin-top: 15px;
+}
+
+.filterSpacingP{
+  margin-top: 19px;
+}
+
+.iconButton {
+  margin-right: 5px;
+}
+
+.itemStyle {
+  -webkit-box-shadow: 2px 2px 2px 1px #808080;
+  box-shadow: 2px 2px 2px 1px #808080;
+}
+
+div{
+  font-family: Verdana;
+}
+
+
+

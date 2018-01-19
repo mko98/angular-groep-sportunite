@@ -1,0 +1,8 @@
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+.itemStyle {
+  -webkit-box-shadow: 2px 2px 2px 1px #808080;
+  box-shadow: 2px 2px 2px 1px #808080;
+}

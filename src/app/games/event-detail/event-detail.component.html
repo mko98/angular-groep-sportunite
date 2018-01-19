@@ -1,0 +1,74 @@
+<div class="itemStyle" style="margin-top: 30px;margin-bottom: 30px;">
+<div class="row itemSpacing">
+  <div class="col-xs-12 bottomSpacing">
+    <div
+    class="btn-group buttonStyle"
+    style="float: right; margin-top: 10px;"
+    appDropdown>
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle">
+      Manage Event <span class="glyphicon glyphicon-collapse-down"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a style="cursor: pointer;" (click)="onEditEvent()">Edit Event Information</a></li>
+      <li><a style="cursor: pointer;" (click)="onDeleteEvent()">Delete Event</a></li>
+    </ul>
+  </div>
+
+    <div class="row">
+    <div class="col-xs-12">
+      <h1>{{ event.name }}</h1>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <strong>Price: </strong>
+        € {{ event.price }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <strong>SportHall:</strong>
+        {{ event.sportHall }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <strong>Sport:</strong>
+        {{ event.sport }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <strong>Availability:</strong>
+        {{ event.availability }}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12" style="margin-top: 20px; margin-bottom: 10px;">
+    <div class="row">
+    <div class="col-xs-12">
+      <strong>Event Users:</strong>
+      <div class="col-xs-12" *ngIf="!containsUser()">
+        <span>Are you not on the list? Add yourself to the event!</span><br>
+      <button (click)="onJoinSubmit()" [disabled]="containsUser()" class="btn btn-success">Join Event</button>
+      </div>
+    </div>
+  </div>
+    <div style="margin-top: 10px;">
+      <app-guest-item
+        *ngFor="let characterEL of users"
+        [user]="characterEL"
+        [eventId]="event._id"
+        [index]="i"
+        (userSelected)="onGameSelected(characterEL)">
+      </app-guest-item>
+    </div>
+  </div>
+</div>
+</div>
